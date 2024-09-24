@@ -14,6 +14,7 @@ def survey_start():
 
 @app.route('/begin', methods=["POST"])
 def start_survey():
+
     session[Responses] = []
 
     return redirect('/questions/0')
